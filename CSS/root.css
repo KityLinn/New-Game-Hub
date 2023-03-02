@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+    --main-bg-color: #2a2e45;
+    --black:#212121;
+    --main-hed-color:#E3E3E3;
+    --main-footer-color:#d9d9d9;
+    --main-white-color:#F4F2F2;
+    --green-buy-color:#7FA721;
+    --lato-font:"Lato", sans-serif;
+    --roboto-font:"Roboto", sans-serif;
+    --box-shadow-inn: inset 0 0 10px #212121;
+    --games-border:0 0 10px 10px;
+    --img-bg-color:rgba(0, 0, 0, 0.082);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  
+  /* Main header with Media queries */
+  
+  .main_header {
+    max-height: fit-content;
+    width: 100%;
+    background-color: var(--main-hed-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 5vw;
+    margin: 0;
+  }
+  
+  
+  
+  .mainlogo {
+    padding: 10px;
+    margin-left: 4vw;
+    height: 14vh;
+  }
+  
+  @media (max-width: 540px) {
+    .mainlogo {
+      height: 13vh;
+    }
+  }
+  
+  @media (max-width: 420x) {
+    .mainlogo {
+      margin-left: 0;
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .mainlogo {
+      margin-left: 25vw;
+    }
+  }
+  
+  .navigation2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+  }
+  
+  
+  
+  @media (max-width: 1375px) {
+    .navigation2 {
+      margin-left: 23vw;
+      padding-bottom: 2%;
+      gap: 8vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .navigation2 {
+      margin-left: 12vw;
+      padding-bottom: 2%;
+      gap: 8vw;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .navigation2 {
+      margin-left: 9vw;
+      padding-bottom: 2%;
+      gap: 5vw;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .navigation2 {
+      margin-left: 4vw;
+    }
+  }
+
+  
+  .navigation2 a {
+    text-decoration: none;
+    font-family: var(--roboto-font);
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .navigation2 li i {
+    height: 3vh;
+    display: block;
+  }
+
+  .navigation2 i {
+    margin-left: 22%;
+    margin-bottom: 3%;
+    font-size: 1.4rem;
+  }
+
+  
+  .searchbar {
+    height: 3vh;
+    width: 40vw;
+    color: var(--black);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  
+  
+  @media (max-width: 1375px) {
+    .searchbar {
+      width: 50vw;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .searchbar {
+      width: 43vw;
+      padding: 10px 12px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .searchbar {
+      width: 34vw;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .searchbar {
+      display: none;
+    }
+  }
+  
+  /* secondary header with Media queries */
+  
+  .main_nav {
+    height: 7vh;
+    width: 100%;
+    background-color:var(--main-white-color);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+  
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .navigation li a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .navigation {
+      gap: 4vw;
+    }
+    .navigation li a {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Footer with Media queries */
+
+footer {
+    background-color: var(--main-footer-color);
+    height: 10vh;
+    width: 100%;
+  }
+  
+  .social_media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .media_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .media_links li {
+    padding: 1vw;
+    padding-left: 2vw;
+  }
+  
+  
+  .media_links li i {
+    font-size: 2.3rem;
+    color: black;
+  }
+  
+  @media (max-width: 1000px) {
+    .media_links li {
+      margin-top: 2vh;
+      padding-left: 5vw;
+    }
+  
+    .media_links li i {
+      font-size: 2rem;
+    }
+  }

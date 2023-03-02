@@ -1,0 +1,173 @@
+@import "root.css";
+
+
+/*Main cart*/
+
+.cart_section {
+  height: 60vh;
+  margin: 8vh 0 8vh 0;
+}
+
+.cart_section h1 {
+  color: var(--main-white-color);
+  margin-left: 12vw;
+}
+
+.cart_main {
+  display: grid;
+  grid-template-areas: 
+  '. x x . . y y y . ';
+}
+
+.cart_left {
+  grid-area: x;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart_item {
+  box-shadow: var(--box-shadow-inn);
+  width: 580px;
+  height: 18vh;
+  align-self: flex-start;
+  background-color: var(--main-white-color);
+  display: flex;  
+  flex-direction: row;
+  font-weight: 700;
+}
+
+.cart_img {
+  height: 18vh;
+  width: 100px;
+}
+
+.cart_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.cart_name {
+  margin-left: 5px;
+}
+
+.cart_price {
+  margin-left: auto;
+  margin-right: 13px;
+}
+
+.cart_options {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: var(--black);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.cart_right {
+  grid-area: y;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 13vh;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.cart_total {
+  height: 100px;
+  width: 300px;
+  background-color: var(--main-white-color);
+  text-align: center;
+  display: block;
+  box-shadow: var(--box-shadow-inn);
+}
+
+.goto {
+  background-color: var(--green-buy-color);
+  height: 80px;
+  width: 240px;
+  box-shadow: var(--box-shadow-inn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.cart_right a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+@media (max-width:950px) {
+  .cart_item {
+    width: 430px;
+  }
+
+  .cart_total {
+    width: 250px;
+  }
+
+  .goto {
+    width: 190px;
+  }
+  
+}
+
+@media (max-width:720px) {
+  .cart_main {
+    grid-template-areas: 
+    '. x x .'
+    '. y y .';
+  }
+  .cart_item {
+    width: 550px;
+    align-self: center;
+    margin-bottom: 5vh;
+  }
+
+  .cart_total {
+    width: 550px;
+  }
+
+  .goto {
+    width: 200px;
+    align-self: flex-end;
+  }
+
+  .cart_right {
+    gap: 5vh;
+  }
+
+  .cart_options {
+    gap: 8px;
+  }
+  
+}
+
+@media (max-width:580px) {
+
+  .cart_item {
+    width: 360px;
+    align-self: auto;
+    font-size: 0.9rem;
+
+  }
+
+  .cart_total {
+    width: 360px;
+  }
+
+  .goto {
+    width: 170px;
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  .cart_options {
+    font-size: 0.8rem;
+  }
+}

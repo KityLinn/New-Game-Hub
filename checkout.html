@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check out your product">
+    <script src="https://kit.fontawesome.com/f030c15e73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/checkout.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Game Hub | Check out</title>
+</head>
+
+<body>
+    <header>
+        <!-- Header area -->
+        <div class="main_header">
+            <a href="index.html"><img class="mainlogo" src="./images/GameHub_Logo.png" alt="Gamehub"></a>
+            <input class="searchbar" type="text" placeholder="Search">
+            <div class="secondary_navigation">
+
+                <ul class="navigation2"> 
+                    <li><a href="#"><i class="fa-regular fa-user"></i>Log in</a></li>
+                
+                    <li><a href="./contact.html"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+                
+                    <li><a href="#"><i class="fa-regular fa-newspaper"></i>News</a></li>
+                
+                    <li><a href="./about_us.html"><i class="fa-solid fa-users"></i>About us</a></li>
+                
+                    <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                </ul>
+
+            </div>
+        </div> <!-- Secondary header -->
+        <div class="main_nav">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="games.html">Browse games</a></li>
+                    <li><a href="#">Sell your games</a></li>
+                    <li><a href="#">Gaming deals</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout_section">
+            <h1>CHECK OUT</h1>
+            <div class="checkout_main">
+                <div class="checkout_left">
+                    <div class="checkout_game">
+                        <div class="checkout_img"><img src="./images/GameHub_covers3.jpg" alt="BLACK"></div>
+                        <div class="checkout_name"><p>BLACK</p></div>
+                        <div class="checkout_price"><p>Total 60$</p></div>
+                    </div>
+                    <div class="checkout_info">
+                        <h3>BILLING INFORMATION</h3>
+                        <form>
+                            <label for="name">name</label><input value="NAME" id="name" type="text" placeholder="NAME">
+                            <label for="email">email</label> <input value="EMAIL" id="email" type="email" placeholder="EMAIL">
+                            <label for="phone">Phone number</label><input value="PHONE" id="phone" type="tel" placeholder="PHONE">
+                            <label for="adress">Adress</label> <input value="ADRESS" id="adress" type="text" placeholder="ADRESS">
+                        </form>
+                    </div>
+                    </div>
+                    <div class="checkout_right">
+                        <div class="checkout_pay">
+                            <h3>PAYMENT DETAILS</h3>
+                            <form class="form">
+                                <div class="form-wicon">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <input type="text" placeholder="Credit card" class="input_field">
+                                </div>
+                                <div class="form-wicon">
+                                    <i class="fa-brands fa-paypal"></i>
+                                    <input type="text" placeholder="Paypal" class="input_field">
+                                </div>
+                                <div class="checkout_gift">
+                                    <label for="gift">GIFT THIS PURCHASE</label>
+                                    <input type="checkbox" id="gift" name="gift">
+                                </div>
+                            </form>
+                    
+                            <div class="checkout_pay_btn">
+                                <input type="checkbox" id="add_cart">
+                                <label class="button" for="add_cart">
+                                    <a class="button-theme"> 
+                                        PAY FOR YOUR ORDER
+                                    </a>
+                                </label>
+                                <div class="overlay"></div>
+                                <div class="modal">
+                                    <div class="modal_content">
+                                        <label for="add_cart" class="button modal_icon">
+                                            <a class="button_theme"><i class="fa-solid fa-x"></i></a>
+                                        </label>
+                                        <h3>Thank you for your purchase!</h3>
+                                        <div class="modal_text">
+                                            <p>Thank you for shopping at Game Hub!</p>
+                                            <p>We hope you had a pleasant experiene and wish you happy gaming</p>
+                                        </div>
+                    
+                                        <a href="./index.html">
+                                            <div class="modal_front">
+                                                <p>Back to front page</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <!--Footer area -->
+        <div class="social_media">
+            <ul class="media_links">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
